@@ -1,0 +1,6 @@
+# m h  dom mon dow   command
+0 19 * * * /home/pi/projects/powerswitch/BlueLEDsOn.sh
+0 19 * * * /home/pi/projects/powerswitch/WhiteLEDsOn.sh
+0 2 * * * /home/pi/projects/powerswitch/WhiteLEDsOff.sh
+0 2 * * * /home/pi/projects/powerswitch/BlueLEDsOff.sh
+@reboot python /home/pi/projects/powerswitch/TankControl.py &
